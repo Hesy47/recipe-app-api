@@ -1,2 +1,2 @@
 # recipe-app-api
-The backend of Recipe Rest API project.
+The backend of Recipe Django Rest API project.

@@ -11,6 +11,7 @@ class UserAdmin(BaseUserAdmin):
     ordering = ["id"]
     search_fields = ["email"]
     readonly_fields = ["last_login"]
+
     fieldsets = (
         (None, {"fields": ("name", "email", "password")}),
         (
@@ -25,6 +26,7 @@ class UserAdmin(BaseUserAdmin):
         ),
         (_("Important dates"), {"fields": ("last_login",)}),
     )
+
     add_fieldsets = (
         (
             None,

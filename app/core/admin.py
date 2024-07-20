@@ -9,7 +9,7 @@ class UserAdmin(BaseUserAdmin):
 
     list_display = ["id", "name", "email", "is_active", "is_staff", "is_superuser"]
     ordering = ["id"]
-    search_fields = ["email"]
+    search_fields = ["name"]
     readonly_fields = ["last_login"]
 
     fieldsets = (
